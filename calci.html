@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		#submit {
+			background:pink;
+			padding: 15px 32px;
+			text-align: center;
+			margin: 4px 2px
+		}
+		#clear{
+			background:pink;
+			padding: 15px 32px;
+			text-align: center;
+			margin: 4px 2px
+		}
+		.container2{
+
+		 background-color:grey;
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+}
+	</style>
+</head>
+<body>
+	<div class="container" style="text-align: center;">
+		<div class="container2">
+		<h1 class="calculator">My Calculator</h1>
+		<input type="text" name ="screen"id="screen" style="width:230px"><br/></input>
+		<button id="submit" value="1" onclick="display_digit ('1')">1</button>
+		<button id="submit" value="2" onclick="display_digit ('2')">2</button>
+		<button id="submit" value="3" onclick="display_digit ('3')">3</button>
+		<br/>
+		<button id="submit" value="4" onclick="display_digit ('4')" >4</button>
+		<button id="submit" value="5" onclick="display_digit ('5')">5</button>
+		<button id="submit" value="6" onclick="display_digit ('6')">6</button>
+		<br/>
+		<button id="submit" value="7" onclick="display_digit ('7')">7</button>
+		<button id="submit" value="8" onclick="display_digit ('8')">8</button>
+		<button id="submit" value="9" onclick="display_digit ('9')">9</button>
+		<br/>
+		<button id="submit" value="*" onclick="display_digit ('*')">*</button>
+		<button id="submit" value="0" onclick="display_digit ('0')">0</button>
+		<button id="submit" value="/"onclick="display_digit ('/')">/</button>
+		<br/>
+		<button id="submit" value="-" onclick="display_digit ('-')">-</button>
+		<button id="submit" value="+"onclick="display_digit ('+')">+</button>
+		<button id="submit" value="%"onclick="display_digit ('%')">%</button>
+		<br/>
+        <button id="clear" value="C">C</button>
+		<button id="submit" value="="onclick="solution()">=</button>
+		<button id="submit" value="."onclick="display_digit ('.')">.</button>
+		
+
+		
+
+
+</div>
+
+	</div>
+
+</body>
+<script type="text/javascript" src="js/calci.js"></script>
+</html>
